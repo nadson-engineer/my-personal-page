@@ -1,0 +1,156 @@
+
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/tecno.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed ;
+    min-height: 200vh;
+}
+.sub-titulo{
+    padding: 0.5px;
+    display: flex;
+    margin-top: 45px;
+    position: absolute;
+   justify-content: space-between;
+   align-items: start;
+}
+.home{
+    color: #111111;
+    padding: 2px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+}
+.home:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.mensagem{
+    color: #111111;
+    width: 90%;
+    max-width: 800px;
+    font-size: 1.8rem;
+    padding: 50px 20px;
+    margin: 100px auto;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 8px;
+    border: 0px solid;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #111111;
+    padding: 12px 20px;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0. 0, 0.3);
+    height: 1.5rem;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-left: 450px;
+}
+.contato{
+  
+    color: #111111;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+   
+}
+.contato:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.sobre{
+    color: #111111;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+}
+.sobre:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cv{
+     display: inline-block;
+    color: #111111;
+    padding: 2px 10px;
+    cursor: pointer;
+    border-radius: 40px;   
+    border: 0px solid;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+.cv:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.skill{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 25%;
+    color:#111111;
+    font-family: 'Rajdhani', sans-serif;
+}
+.logos{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    height: 5vh;
+}
+.sobremim{
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+}
+.texto{
+    color: #111111;
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 3px;
+    border: 0px solid;
+    background-color: rgba(255, 255, 255, 0.3);
+     font-family: 'Rajdhani', sans-serif;
+     backdrop-filter: blur(4px);
+}
+.conversar {
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    width: fit-content ;
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+    border: 0px solid;
+    border-radius: 50px;
+   background-color: rgba(255, 255, 255, 0.5);
+   padding: 8px;
+    
+}

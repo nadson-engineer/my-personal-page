@@ -31,4 +31,3 @@ Estilos: Todas as alterações de estilo devem ser feitas no arquivo css/style.c
 
   Conteúdo: As modificações no conteúdo e na estrutura da página são feitas em index.html.
 
-  Link: https://nadson-engineer.github.io/portifoliio/

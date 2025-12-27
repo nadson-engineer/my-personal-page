@@ -1,33 +1,65 @@
-Documentação: Página Pessoal Responsiva
-Este documento descreve a estrutura, o funcionamento e as tecnologias utilizadas.
+# 📘 Funcionamento do Projeto – My Personal Page
 
-1 - Visão Geral do Projeto
-Esta é uma página web pessoal construída utilizando as tecnologias front-end fundamentais: HTML e CSS. O objetivo principal é ser uma plataforma para conhecer mais sobre mim e poder conversar comigo diretamente. A página é totalmente responsiva, adaptando-se a diferentes tamanhos de tela (desktop, tablet, mobile) para uma ótima experiência de usuário em qualquer dispositivo.
+Este projeto consiste em uma página pessoal desenvolvida para apresentar informações profissionais, habilidades técnicas e formas de contato de maneira clara, moderna e responsiva.
 
-2 - Tecnologias Utilizadas
-HTML5: Usado para estruturar o conteúdo da página, incluindo seções semânticas
+A aplicação foi construída seguindo boas práticas de desenvolvimento front-end, com foco em organização, legibilidade de código e experiência do usuário.
 
-  CSS3: Responsável pela estilização e pelo design visual da página.
+---
 
-  Flexbox & CSS Grid: Utilizados para criar layouts modernos e responsivos, garantindo que os elementos se organizem de forma otimizada em diferentes dimensões de tela.
+## 🔧 Funcionamento Geral
 
-  Media Queries: Essenciais para aplicar estilos específicos a determinados tamanhos de tela, assegurando a responsividade.
+A aplicação funciona como uma **Single Page Application (SPA)**, onde todo o conteúdo é carregado dinamicamente no navegador, sem necessidade de recarregamento da página.
 
-  Manipulação do DOM (Document Object Model): Usado para selecionar elementos HTML, alterar conteúdo, adicionar/remover classes e escutar eventos do usuário.
+O funcionamento ocorre da seguinte forma:
 
-3 - Responsividade
-  A página foi projetada com uma abordagem Mobile-First ou Desktop-First e implementa responsividade através de:
+- O navegador carrega o arquivo principal da aplicação.
+- Os scripts JavaScript inicializam a interface e controlam o comportamento dos elementos.
+- Os estilos CSS são aplicados para garantir uma experiência visual consistente.
+- O layout se adapta automaticamente ao tamanho da tela do usuário.
 
-  Meta Viewport Tag: Presente no <head> do index.html (<meta name="viewport" content="width=device-width, initial-scale=1.0">), garantindo que a página seja renderizada corretamente em dispositivos móveis.
+---
 
-  Unidades Relativas: Uso de em, rem, %, vw, vh para tamanhos de fonte, espaçamentos e dimensões de elementos, permitindo que eles se ajustem proporcionalmente.
+## 🧠 Lógica da Aplicação
 
-  Imagens Flexíveis: Imagens configuradas com max-width: 100%; height: auto; para escalar proporcionalmente dentro de seus contêineres.
+- Os componentes são organizados de forma modular.
+- O JavaScript é responsável por:
+  - Manipular o DOM
+  - Controlar interações do usuário
+  - Atualizar conteúdos dinamicamente
+- O CSS garante responsividade, padronização visual e boa usabilidade.
 
-  Media Queries: Definidas no CSS para ajustar o layout, tamanhos de fonte e visibilidade de elementos em breakpoints específicos (ex: para tablets e desktops).
+---
 
-4 - Contribuição e Manutenção
-Estilos: Todas as alterações de estilo devem ser feitas no arquivo css/style.css ou, se houver, em css/responsive.css para ajustes específicos de responsividade.
+## 📱 Responsividade
 
-  Conteúdo: As modificações no conteúdo e na estrutura da página são feitas em index.html.
+O projeto foi desenvolvido com foco em responsividade, garantindo boa experiência em:
+
+- Smartphones  
+- Tablets  
+- Desktops  
+
+Para isso, são utilizados:
+- Media Queries  
+- Unidades relativas (`rem`, `vh`, `vw`, `%`)  
+- Layouts flexíveis com Flexbox e Grid  
+
+---
+
+## 🚀 Objetivo do Projeto
+
+O principal objetivo deste projeto é:
+
+- Apresentar meu perfil profissional de forma clara e organizada  
+- Demonstrar conhecimentos em desenvolvimento front-end  
+- Servir como portfólio para oportunidades profissionais  
+
+---
+
+## 👨‍💻 Autor
+
+**Nadson Oliveira Coelho**  
+Estudante de Engenharia de Software  
+GitHub: https://github.com/nadson-engineer  
+
+---
 

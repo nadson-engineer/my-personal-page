@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgWa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1620"/>
+      <stop offset="55%" stop-color="#0F2A2A"/>
+      <stop offset="100%" stop-color="#0A1620"/>
+    </linearGradient>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3A6"/>
+      <stop offset="100%" stop-color="#0EA5A5"/>
+    </linearGradient>
+    <radialGradient id="glowWa" cx="75%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#22D3A6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#22D3A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgWa)"/>
+  <rect width="1200" height="630" fill="url(#glowWa)"/>
+
+  <!-- circuit-like dots representing local AI -->
+  <g stroke="#22D3A6" stroke-opacity="0.18">
+    <line x1="60" y1="500" x2="260" y2="500"/>
+    <line x1="260" y1="500" x2="260" y2="420"/>
+    <line x1="260" y1="420" x2="360" y2="420"/>
+    <circle cx="60" cy="500" r="4" fill="#22D3A6"/>
+    <circle cx="260" cy="500" r="4" fill="#22D3A6"/>
+    <circle cx="360" cy="420" r="4" fill="#22D3A6"/>
+  </g>
+
+  <!-- title -->
+  <g transform="translate(80,90)">
+    <text x="0" y="0" fill="#EAFFFB" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="-1">Chatbot IA no WhatsApp</text>
+    <text x="0" y="32" fill="#7FD9C9" font-family="Arial, Helvetica, sans-serif" font-size="17">Atendimento automatizado com IA local (Ollama)</text>
+  </g>
+
+  <!-- phone mockup -->
+  <g transform="translate(700,140)">
+    <rect x="0" y="0" width="300" height="440" rx="34" fill="#0C2222" stroke="#1E4A45" stroke-width="2"/>
+    <rect x="14" y="30" width="272" height="380" rx="18" fill="#0A1B1B"/>
+    <rect x="14" y="30" width="272" height="46" fill="#0F2E2C"/>
+    <circle cx="46" cy="53" r="14" fill="#1E4A45"/>
+    <text x="70" y="58" fill="#EAFFFB" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">Agente IA</text>
+
+    <!-- incoming bubble -->
+    <rect x="30" y="100" width="180" height="46" rx="14" fill="#123333"/>
+    <text x="44" y="128" fill="#BFEFE4" font-family="Arial, Helvetica, sans-serif" font-size="12">Qual o horário de hoje?</text>
+
+    <!-- outgoing bubble (bot) -->
+    <rect x="90" y="160" width="196" height="60" rx="14" fill="url(#bubbleGrad)"/>
+    <text x="106" y="184" fill="#04211C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold">Atendimento das 8h às 18h.</text>
+    <text x="106" y="202" fill="#04211C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold">Posso agendar pra você?</text>
+
+    <!-- incoming bubble -->
+    <rect x="30" y="236" width="150" height="40" rx="14" fill="#123333"/>
+    <text x="44" y="260" fill="#BFEFE4" font-family="Arial, Helvetica, sans-serif" font-size="12">Sim, por favor!</text>
+
+    <!-- typing indicator -->
+    <g transform="translate(90,300)">
+      <rect x="0" y="0" width="70" height="30" rx="14" fill="#123333"/>
+      <circle cx="20" cy="15" r="3" fill="#7FD9C9"/>
+      <circle cx="35" cy="15" r="3" fill="#7FD9C9"/>
+      <circle cx="50" cy="15" r="3" fill="#7FD9C9"/>
+    </g>
+  </g>
+
+  <!-- feature chips -->
+  <g transform="translate(80,220)" fill="#BFEFE4" font-family="Arial, Helvetica, sans-serif" font-size="14">
+    <g transform="translate(0,0)">
+      <rect width="270" height="42" rx="21" fill="#0F2E2C" stroke="#1E4A45"/>
+      <text x="20" y="27">IA local com Ollama</text>
+    </g>
+    <g transform="translate(0,58)">
+      <rect width="270" height="42" rx="21" fill="#0F2E2C" stroke="#1E4A45"/>
+      <text x="20" y="27">Integração via API do WhatsApp</text>
+    </g>
+    <g transform="translate(0,116)">
+      <rect width="270" height="42" rx="21" fill="#0F2E2C" stroke="#1E4A45"/>
+      <text x="20" y="27">Arquitetura baseada em agente</text>
+    </g>
+    <g transform="translate(0,174)">
+      <rect width="270" height="42" rx="21" fill="#0F2E2C" stroke="#1E4A45"/>
+      <text x="20" y="27">Automação de fluxos de conversa</text>
+    </g>
+  </g>
+</svg>

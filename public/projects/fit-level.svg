@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgFit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F17"/>
+      <stop offset="55%" stop-color="#123524"/>
+      <stop offset="100%" stop-color="#0B1F17"/>
+    </linearGradient>
+    <linearGradient id="barFit" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#A3E635"/>
+    </linearGradient>
+    <radialGradient id="glowFit" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgFit)"/>
+  <rect width="1200" height="630" fill="url(#glowFit)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#A3E635" stroke-opacity="0.06">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+  </g>
+
+  <!-- avatar silhouette from photo concept -->
+  <g transform="translate(150,190)">
+    <circle cx="120" cy="120" r="120" fill="#0F2A1C" stroke="#3EDC84" stroke-width="2" stroke-opacity="0.5"/>
+    <circle cx="120" cy="95" r="42" fill="#1B4430"/>
+    <path d="M50 210 C50 150 190 150 190 210 Z" fill="#1B4430"/>
+    <circle cx="120" cy="120" r="120" fill="none" stroke="#A3E635" stroke-width="3" stroke-dasharray="8 10" stroke-opacity="0.6"/>
+    <text x="120" y="270" text-anchor="middle" fill="#A3E635" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="1">AVATAR IA</text>
+  </g>
+
+  <!-- calorie bar chart -->
+  <g transform="translate(480,300)">
+    <rect x="0" y="90" width="40" height="90" rx="6" fill="url(#barFit)" opacity="0.9"/>
+    <rect x="55" y="50" width="40" height="130" rx="6" fill="url(#barFit)"/>
+    <rect x="110" y="20" width="40" height="160" rx="6" fill="url(#barFit)" opacity="0.9"/>
+    <rect x="165" y="65" width="40" height="115" rx="6" fill="url(#barFit)" opacity="0.75"/>
+    <text x="0" y="215" fill="#8FBBA0" font-family="Arial, Helvetica, sans-serif" font-size="14">Cardápio &amp; calorias em tempo real</text>
+  </g>
+
+  <!-- chat bubble w/ plate icon -->
+  <g transform="translate(760,300)">
+    <rect x="0" y="0" width="230" height="150" rx="20" fill="#0F2A1C" stroke="#2E6B47" stroke-width="1.5"/>
+    <circle cx="60" cy="60" r="34" fill="none" stroke="#A3E635" stroke-width="4"/>
+    <circle cx="60" cy="60" r="18" fill="none" stroke="#A3E635" stroke-width="2" stroke-opacity="0.6"/>
+    <text x="110" y="50" fill="#E7FBEF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold">312 kcal</text>
+    <text x="110" y="72" fill="#8FBBA0" font-family="Arial, Helvetica, sans-serif" font-size="12">detectado na foto</text>
+    <text x="30" y="120" fill="#8FBBA0" font-family="Arial, Helvetica, sans-serif" font-size="13">Chat com IA analisa o prato</text>
+  </g>
+
+  <!-- title -->
+  <g transform="translate(150,90)">
+    <text x="0" y="0" fill="#F5FFF7" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" letter-spacing="-1">Fit Level</text>
+    <text x="0" y="34" fill="#8FBBA0" font-family="Arial, Helvetica, sans-serif" font-size="18">App de emagrecimento e ganho de massa com IA</text>
+  </g>
+
+  <!-- competition badge -->
+  <g transform="translate(940,90)">
+    <rect x="0" y="0" width="150" height="44" rx="22" fill="#123524" stroke="#3EDC84" stroke-opacity="0.6"/>
+    <circle cx="24" cy="22" r="8" fill="#A3E635"/>
+    <circle cx="40" cy="22" r="8" fill="#22C55E" opacity="0.8"/>
+    <text x="58" y="27" fill="#E7FBEF" font-family="Arial, Helvetica, sans-serif" font-size="13">Modo competição</text>
+  </g>
+</svg>

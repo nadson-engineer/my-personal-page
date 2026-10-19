@@ -123,6 +123,14 @@ export const DATA = {
       start: "",
       end: "Concluído",
     },
+    {
+      school: "Udemy",
+      href: "https://www.udemy.com/",
+      degree: "Curso de Desenvolvimento Full Stack",
+      logoUrl: "/logos/udemy.svg",
+      start: "",
+      end: "",
+    },
   ],
   projects: [
     {

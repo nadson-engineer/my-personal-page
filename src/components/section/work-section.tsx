@@ -35,18 +35,18 @@ export default function WorkSection() {
     <Accordion type="single" collapsible className="w-full grid gap-6">
       {DATA.work.map((work) => (
         <AccordionItem
-          key={work.company}
-          value={work.company}
+          key={`${work.company}-${work.title}`}
+          value={`${work.company}-${work.title}`}
           className="w-full border-b-0 grid gap-2"
         >
           <AccordionTrigger className="hover:no-underline p-0 cursor-pointer transition-colors rounded-none group [&>svg]:hidden">
-            <div className="flex items-center gap-x-3 justify-between w-full text-left">
-              <div className="flex items-center gap-x-3 flex-1 min-w-0">
+            <div className="grid grid-cols-[32px_minmax(0,1fr)] gap-x-3 gap-y-1 w-full text-left sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
+              <div className="col-span-2 flex items-start gap-x-3 min-w-0 sm:col-span-1 sm:items-center">
                 <LogoImage src={work.logoUrl} alt={work.company} />
                 <div className="flex-1 min-w-0 gap-0.5 flex flex-col">
-                  <div className="font-semibold leading-none flex items-center gap-2">
+                  <div className="font-semibold leading-snug flex items-center gap-2">
                     {work.company}
-                    <span className="relative inline-flex items-center w-3.5 h-3.5">
+                    <span className="relative inline-flex shrink-0 items-center w-3.5 h-3.5">
                       <ChevronRight
                         className={cn(
                           "absolute h-3.5 w-3.5 shrink-0 text-muted-foreground stroke-2 transition-all duration-300 ease-out",
@@ -69,7 +69,7 @@ export default function WorkSection() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
+              <div className="col-start-2 text-xs leading-relaxed tabular-nums text-muted-foreground sm:col-start-auto sm:text-right">
                 <span>
                   {work.start} - {work.end ?? "Present"}
                 </span>

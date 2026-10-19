@@ -19,7 +19,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
     <img
       src={src}
       alt={alt}
-      className="w-full h-48 object-cover"
+      className="w-full h-48 object-cover object-top"
       onError={() => setImageError(true)}
     />
   );
@@ -48,26 +48,22 @@ export function ProjectCard({
   description,
   dates,
   tags,
-  link,
   image,
   video,
   links,
   className,
 }: Props) {
+  const hasSite = Boolean(href && href !== "#");
   return (
     <div
       className={cn(
-        "flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 cursor-pointer hover:ring-muted transition-all duration-200",
+        "relative flex flex-col h-full border border-border rounded-xl overflow-hidden transition-all duration-200",
+        hasSite && "hover:ring-2 hover:ring-muted",
         className
       )}
     >
       <div className="relative shrink-0">
-        <Link
-          href={href || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
+        <div>
           {video ? (
             <video
               src={video}
@@ -80,9 +76,11 @@ export function ProjectCard({
           ) : image ? (
             <ProjectImage src={image} alt={title} />
           ) : (
-            <div className="w-full h-48 bg-muted" />
+            <div className="w-full h-48 bg-muted flex items-center justify-center p-6 text-center" aria-hidden="true">
+              <span className="text-xl font-semibold tracking-tight text-muted-foreground">{title}</span>
+            </div>
           )}
-        </Link>
+        </div>
         {links && links.length > 0 && (
           <div className="absolute top-2 right-2 flex flex-wrap gap-2">
             {links.map((link, idx) => (
@@ -91,6 +89,7 @@ export function ProjectCard({
                 key={idx}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="relative z-10"
                 onClick={(e) => e.stopPropagation()}
               >
                 <Badge
@@ -109,17 +108,17 @@ export function ProjectCard({
         <div className="flex items-start justify-between gap-2">
           <div className="flex flex-col gap-1">
             <h3 className="font-semibold">{title}</h3>
-            <time className="text-xs text-muted-foreground">{dates}</time>
+            {dates && <span className="text-xs text-muted-foreground">{dates}</span>}
           </div>
-          <Link
-            href={href || "#"}
+          {hasSite && <Link
+            href={href!}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-            aria-label={`Open ${title}`}
+            className="text-muted-foreground hover:text-foreground transition-colors after:absolute after:inset-0 focus-visible:outline-none focus-visible:after:ring-2 focus-visible:after:ring-inset focus-visible:after:ring-ring rounded-sm"
+            aria-label={`Abrir site de ${title} (nova aba)`}
           >
             <ArrowUpRight className="h-4 w-4" aria-hidden />
-          </Link>
+          </Link>}
         </div>
         <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
           <Markdown>{description}</Markdown>

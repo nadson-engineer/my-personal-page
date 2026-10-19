@@ -1,6 +1,10 @@
 import { Icons } from "@/components/icons";
 import type { ReactNode } from "react";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { Postman } from "@/components/ui/svgs/postman";
+import { NestJS } from "@/components/ui/svgs/nestjs";
+import { VectorDatabase } from "@/components/ui/svgs/vectorDatabase";
+import { LangChain } from "@/components/ui/svgs/langchain";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -8,6 +12,7 @@ import { Javascript } from "@/components/ui/svgs/javascript";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Python } from "@/components/ui/svgs/python";
 import { MongoDB } from "@/components/ui/svgs/mongodb";
+import { Docker } from "@/components/ui/svgs/docker";
 
 type HackathonLink = { title: string; icon: ReactNode; href: string };
 type ProjectLink = { type: string; icon: ReactNode; href: string };
@@ -22,17 +27,22 @@ export const DATA = {
     "https://www.google.com/maps/place/Feira+de+Santana,+BA",
   description: "Desenvolvedor Full Stack",
   summary:
-    "Desenvolvedor Full Stack com experiência na entrega de mais de 10 projetos web, incluindo loja virtual, integração com a API do YouTube e sistemas de autenticação com validação de e-mail e banco de dados. Atuo no desenvolvimento de aplicações utilizando React.js, Node.js, JavaScript e TypeScript, criando soluções escaláveis, intuitivas e voltadas para resolver problemas reais. Também tenho experiência com integrações, automação de processos e aplicação de IA. Participei de dois hackathons - pela Unifacs em 2024 e pela Órbita/Unifan/Unef em 2026, onde [conquistei o 1º lugar](/#hackathons).",
+    "Desenvolvedor Full Stack com experiência em sistemas contábeis e tributários, nos quais contribuí para reduzir retrabalho, tempo de carregamento e tempo de análise de dados. Campeão de hackathon com um aplicativo de saúde com IA integrada. Atualmente, aprofundo meus conhecimentos em IA aplicada (LLMs, RAG, agentes e LangChain) para resolver problemas reais de negócio.",
   avatarUrl: "/profile.jpg",
   skills: [
     { name: "TypeScript", icon: Typescript },
     { name: "JavaScript", icon: Javascript },
     { name: "Node.js", icon: Nodejs },
+    { name: "NestJS", icon: NestJS },
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "Tailwind CSS", icon: Icons.tailwindcss },
     { name: "MongoDB", icon: MongoDB },
     { name: "Python", icon: Python },
+    { name: "Docker", icon: Docker },
+    { name: "Banco vetorial", icon: VectorDatabase },
+    { name: "LangChain", icon: LangChain },
+    { name: "Postman", icon: Postman },
     { name: "Git / GitHub", icon: Icons.github },
   ],
   navbar: [
@@ -51,7 +61,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/nadson-oliveira",
+        url: "https://www.linkedin.com/in/nadosn-coelho",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -116,6 +126,44 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Buscador de Dívida PGFN",
+      href: "https://inteligencia-contabil-git-main-tecnologiacbca01-3482s-projects.vercel.app/",
+      dates: "",
+      active: true,
+      description:
+        "Plataforma de inteligência comercial voltada à prospecção de clientes a partir de dados de dívidas tributárias de empresas. Integra consultas à PGFN via Serpro/Sida e utiliza inteligência artificial para apoiar a análise dos dados e a identificação de oportunidades de atendimento contábil e tributário. O projeto conecta integração de dados, IA e estratégia comercial, transformando informações fiscais em insumos para uma prospecção mais direcionada e decisões de negócio fundamentadas.",
+      technologies: [
+        "IA",
+        "NestJS",
+        "Next.js",
+        "PostgreSQL",
+        "SOLID / POO",
+        "Prisma",
+      ],
+      links: [] as ProjectLink[],
+      image: "/projects/pgfn-protegido.png",
+      video: "",
+    },
+    {
+      title: "Fisconta Online",
+      href: "",
+      dates: "Em desenvolvimento",
+      active: false,
+      description:
+        "Plataforma de atendimento contábil em desenvolvimento, voltada a centralizar os serviços prestados aos clientes e facilitar o acompanhamento das rotinas empresariais. Contempla módulos de folha de pagamento e emissão de notas fiscais, reunindo demandas trabalhistas e fiscais em uma única experiência digital. O projeto combina front-end em Next.js, back-end em NestJS, PostgreSQL com Prisma e recursos de inteligência artificial, aplicando orientação a objetos e princípios SOLID para organizar as regras de negócio e facilitar a evolução dos módulos. O foco é aproximar cliente e escritório contábil, com mais clareza no atendimento e organização dos processos.",
+      technologies: [
+        "IA",
+        "NestJS",
+        "Next.js",
+        "PostgreSQL",
+        "SOLID / POO",
+        "Prisma",
+      ],
+      links: [] as ProjectLink[],
+      image: "/projects/fisconta.png",
+      video: "",
+    },
+    {
       title: "Fit Level",
       href: "https://fitlevel-six.vercel.app",
       dates: "2026",
@@ -143,6 +191,30 @@ export const DATA = {
       technologies: ["Node.js", "TypeScript", "WhatsApp API", "Ollama (IA local)"],
       links: [] as ProjectLink[],
       image: "/projects/whatsapp-ai-chatbot.svg",
+      video: "",
+    },
+    {
+      title: "Castelo Branco Contabilidade Avançada",
+      href: "https://www.castelobrancocontabilidade.com.br/",
+      dates: "",
+      active: true,
+      description:
+        "Site institucional de contabilidade estratégica para importadoras, indústrias, distribuidoras e transportadoras, com foco em transformar serviços complexos em uma jornada clara para o cliente. Apresenta soluções fiscais e tributárias, conteúdos sobre a Reforma Tributária e um simulador interativo de risco e margem com entradas de regime tributário, faturamento e setor. Conecta a exploração dos serviços à solicitação de diagnóstico pelo WhatsApp, aproximando a experiência digital da captação de oportunidades comerciais.",
+      technologies: ["Site institucional", "Contabilidade"],
+      links: [] as ProjectLink[],
+      image: "/projects/castelo-branco.png",
+      video: "",
+    },
+    {
+      title: "Metamind Treinamentos",
+      href: "https://www.metamind.com.br/",
+      dates: "",
+      active: true,
+      description:
+        "Site institucional para uma consultoria de desenvolvimento de lideranças e gestão de pessoas, com foco em apresentar soluções e facilitar o contato com potenciais clientes. Reúne serviços, metodologia própria, cases e depoimentos, além de uma calculadora interativa que estima o custo real de uma equipe a partir de salários, encargos e regime tributário. Conta com integração com o YouTube para exibir automaticamente os episódios de Anna Clara, proprietária da Metamind, mantendo o conteúdo atualizado e reduzindo a necessidade de manutenção manual. O projeto traduz uma oferta consultiva em uma experiência digital clara, conectando conteúdo, interação e objetivos de negócio.",
+      technologies: ["Site institucional", "Treinamentos"],
+      links: [] as ProjectLink[],
+      image: "/projects/metamind.png",
       video: "",
     },
   ],
